@@ -55,7 +55,7 @@ public class SongView {
     }
 
     public static Song creatSong() {
-        Song song = null;
+        Song song = new Song();
         String nameSong;
         String author;
         Scanner scanner = new Scanner(System.in);

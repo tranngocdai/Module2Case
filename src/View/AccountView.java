@@ -19,8 +19,8 @@ public class AccountView  {
         do {
             System.out.println("Menu:");
             System.out.println("1: Đăng nhập");
-            System.out.println("2: Đăng xuất");
-            System.out.println("4: Thoát");
+            System.out.println("2: Đăng kí");
+            System.out.println("3: Thoát");
             chooseLogin = scannerLogin.nextLine();
             checkoutLogin = validate.validate(chooseLogin, regexChoseLogin) && chooseLogin.equals("3");
             switch (chooseLogin) {
@@ -40,10 +40,7 @@ public class AccountView  {
                         System.out.println("Tài khoản đã tồn tại, mời đăng ký lại");
                     }
                     break;
-                case 3:
-
-                    break;
-                case "4":
+                case "3":
                     System.exit(0);
                     break;
             }
@@ -96,5 +93,4 @@ public class AccountView  {
             return false;
         }
     }
-    private static int loginWithAdmin
 }
